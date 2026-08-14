@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Estaciones Hidrológicas Area Operativa 11</title>
+    <style>
+        #tabla-estaciones {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #tabla-estaciones td,
+        #tabla-estaciones th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #tabla-estaciones tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #tabla-estaciones tr:hover {
+            background-color: #ddd;
+        }
+
+        #tabla-estaciones th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        #tabla-estaciones tr.automatica {
+            background-color: #a1c6f7;
+        }
+
+        #tabla-estaciones tr.suspendida {
+            background-color: #e77b7b;
+        }
+
+        .text-end {
+            text-align: end;
+        }
+
+        .llamadas::before {
+            content: '☎️ ';
+        }
+
+        .detalles {
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Estaciones Hidrológicas Área Operativa - 11</h1>
+
+    <select name="select" id="filtro">
+        <option value="todas">Todas</option>
+        <option value="activas">Activas</option>
+        <option value="suspendidas">Suspendidas</option>
+        <!-- <option value="llamadas">Llamadas</option> -->
+        <!-- <option value="pluviometricas">Pluviometricas</option> -->
+        <!-- <option value="climatologicas">Climatologicas</option> -->
+        <option value="automaticas">Automaticas</option>
+    </select>
+
+    <input type="text" id="query" placeholder="Buscar...">
+
+    <hr>
+
+    <!-- <p>
+        Estaciones totales: 348, Activas: 200, Suspendidas: 148
+        <br>
+        Pluviometricas: 117*, Climatologicas: 24*
+    </p> -->
+
+    <table id="tabla-estaciones"></table>
+
+    <dialog id="favDialog">
+        <form method="dialog">
+            <p id="info"></p>
+            <button>Cerrar</button>
+        </form>
+    </dialog>
+
+    <script src="./estaciones.js"></script>
+    <script src="./logica-estaciones.js"></script>
+</body>
+
+</html>
