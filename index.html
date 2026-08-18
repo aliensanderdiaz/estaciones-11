@@ -5,55 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Estaciones Hidrológicas Area Operativa 11</title>
-    <style>
-        #tabla-estaciones {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+<style>
+    #tabla-estaciones {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        background: white;
+    }
 
-        #tabla-estaciones td,
-        #tabla-estaciones th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
+    #tabla-estaciones th {
+        background: linear-gradient(135deg, #f78fb3, #c56cf0);
+        color: white;
+        font-weight: 600;
+        padding: 14px;
+        text-align: left;
+        letter-spacing: 0.5px;
+    }
 
-        #tabla-estaciones tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+    #tabla-estaciones td {
+        padding: 12px 14px;
+        border-bottom: 1px solid #f3e5f5;
+    }
 
-        #tabla-estaciones tr:hover {
-            background-color: #ddd;
-        }
+    #tabla-estaciones tr:nth-child(even) {
+        background-color: #fcf7fb;
+    }
 
-        #tabla-estaciones th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
+    #tabla-estaciones tr:hover {
+        background-color: #fce4ec;
+        transition: all 0.2s ease;
+    }
 
-        #tabla-estaciones tr.automatica {
-            background-color: #a1c6f7;
-        }
+    #tabla-estaciones tr.automatica {
+        background-color: #e8f4ff;
+        border-left: 5px solid #74b9ff;
+    }
 
-        #tabla-estaciones tr.suspendida {
-            background-color: #e77b7b;
-        }
+    #tabla-estaciones tr.suspendida {
+        background-color: #ffe8ec;
+        border-left: 5px solid #ff7675;
+    }
 
-        .text-end {
-            text-align: end;
-        }
+    .text-end {
+        text-align: right;
+        font-weight: 600;
+    }
 
-        .llamadas::before {
-            content: '☎️ ';
-        }
+    .llamadas::before {
+        content: '📞 ';
+    }
 
-        .detalles {
-            cursor: pointer;
-        }
-    </style>
+    .detalles {
+        cursor: pointer;
+        color: #c56cf0;
+        font-weight: 600;
+    }
+
+    .detalles:hover {
+        color: #f78fb3;
+        text-decoration: underline;
+    }
+</style>
 
 
 </head>
