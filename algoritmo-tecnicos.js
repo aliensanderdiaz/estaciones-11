@@ -102,6 +102,58 @@ let tecnicos = [
   {
     "codigo": "4801700102",
     "tecnico": "JUAN DAVID ARDILA"
+  },
+  {
+    "codigo": "44117010",
+    "tecnico": "DAVID RINCÓN"
+  },
+  {
+    "codigo": "44127010",
+    "tecnico": "DAVID RINCÓN"
+  },
+  {
+    "codigo": "44127020",
+    "tecnico": "JEIMMY MELO"
+  },
+  {
+    "codigo": "44137070",
+    "tecnico": "IVÁN PAEZ"
+  },
+  {
+    "codigo": "44137080",
+    "tecnico": "IVÁN PAEZ"
+  },
+  {
+    "codigo": "44147020",
+    "tecnico": "JEIMMY MELO"
+  },
+  {
+    "codigo": "44157010",
+    "tecnico": "DAVID RINCÓN"
+  },
+  {
+    "codigo": "44157020",
+    "tecnico": "GERMAN SOPÓ"
+  },
+  {
+    "codigo": "44157030",
+    "tecnico": "GERMAN SOPÓ"
+  },
+  {
+    "codigo": "44157040",
+    "tecnico": "JUAN DAVID ARDILA"
+  },
+  {
+    "codigo": "44167020",
+    "tecnico": "JUAN DAVID ARDILA"
+  },
+  {
+    "codigo": "44187030",
+    "tecnico": "JUAN DAVID SANTIAGO"
+  },
+  {
+    "codigo": "44197020",
+    "tecnico": "JUAN DAVID SANTIAGO"
   }
 ]
 
